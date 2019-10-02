@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import org.apache.commons.lang3.StringUtils;
 public class JavaStringTraining{
 
 public static  String swapCase(String initialValue)
@@ -21,6 +22,15 @@ initialValue = String.copyValueOf(charArrays);
 return initialValue;
 }
 
+public static String swapCase2(String initialValue)
+{
+
+initialValue =StringUtils.swapCase(initialValue);
+
+return initialValue;
+
+}
+
 public static void main(String[] args)
 
 {
@@ -31,7 +41,10 @@ System.out.println("wartosc zmieniona to");
 System.out.println(swapCase(initialValue));
 
 
-	
+System.out.println("*********");
+System.out.println("wartosc zmieniona metodą z biblioteki apache.commons");
+System.out.println(swapCase2(initialValue));
+
 	
 }
 
